@@ -7,6 +7,25 @@
 </head>
 <body>
     <h1>Proyecto 3</h1>
+    <div>
+    <button>
+        Alternar imagen
+    </button>
+    <img style="width: 400px;" src="Firefly haz un perro conduciendo una pick up vieja 41390.jpg" alt="Perro en camioneta">
+</div>
+    <script>
+        let imagen = document.querySelector("img");
+        let boton = document.querySelector("button");
+        boton.addEventListener("click", function(){
+            if(imagen.style.display == "none") {
+                imagen.style.display = "block";
+            }
+            else {
+                imagen.style.display = "none";
+            }
+        });
+    </script>
+</body>
     <script>
         let numero = 100;
         let texto = "Hola mundo";
@@ -78,5 +97,4 @@
         let comparacion = a!=b ? "a es diferente de b" : "a es igual a b";
         console.log(comparacion);
     </script>
-</body>
 </html>

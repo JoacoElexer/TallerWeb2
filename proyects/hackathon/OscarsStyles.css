@@ -1,0 +1,154 @@
+
+/* Estilos para pantallas grandes (más de 900px) */
+@media only screen and (min-width: 901px) {
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        font-family: Americana Font Regular;
+    }
+
+    @font-face {
+        font-family: 'Americana Font Regular';
+        src: url(Americana\ Font\ Regular.otf);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        color: #fff;
+    }
+
+    /*Inicio de estilos de barra de navegacion*/
+    .navbar {
+        border: 3px solid #fff;
+        padding: 3%;
+        background-color: #fff;
+        margin-top: 35px;
+    }
+
+    .nav_text {
+        font-size: 22px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        top: 4%;
+        margin-left: 2%;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .peliculas {
+        padding: 0;
+        top: 4%;
+        margin-left: 27%;
+        position: absolute;
+    }
+
+    .peliculas::before {
+        content: '';
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        background-color: black;
+        position: absolute;
+        bottom: -.25rem;
+        left: 50%;
+        transition: width .4s, left .4s;
+    }
+
+    .peliculas:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .ganadores {
+        padding: 0;
+        top: 4%;
+        margin-left: 55%;
+        position: absolute;
+    }
+
+    .ganadores::before {
+        content: '';
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        background-color: black;
+        position: absolute;
+        bottom: -.25rem;
+        left: 50%;
+        transition: width .4s, left .4s;
+    }
+
+    .ganadores:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .containerr {
+        display: flex;
+        margin-right: 20%;
+        background-color: transparent;
+        border: none;
+    }
+
+
+    .contenedor-tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .tarjeta {
+        width: 300px;
+        height: 730px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+    
+    .tarjeta img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .tarjeta h2 {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .tarjeta h3 {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .tarjeta p {
+        margin: 10px;
+        font-size: 16px;
+    }
+}
