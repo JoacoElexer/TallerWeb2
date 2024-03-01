@@ -1,6 +1,4 @@
 
-/* Estilos para pantallas grandes (más de 900px) */
-@media only screen and (min-width: 901px) {
     body {
         background-color: #fff;
         margin: 0;
@@ -151,4 +149,3 @@
         margin: 10px;
         font-size: 16px;
     }
-}
