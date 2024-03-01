@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3</title>
+</head>
+<body>
+    <h1>Proyecto 3</h1>
+    <script>
+        let numero = 100;
+        let texto = "Hola mundo";
+        let texto2 = "Hola mundo 2";
+        let booleano = true;
+        let arreglo = [1,2,3,4,5];
+        let arregloCadenas = ["Hola tonotos", "Maldito mundo cruel", "Adios tonotos"];
+        console.log(arregloCadenas[2]);
+        let arregloMixto = [1, "Hola mundo", true, 3.1416];
+        console.log(arregloMixto[3]);
+        arregloMixto[1] = "Hola tonotos";
+        console.log(arregloMixto[1]);
+
+        let objeto = {
+            nombre: "Juan",
+            edad: 25,
+            soltero: true
+            }
+
+        let estudiantes = {
+                nombre: "Joaco",
+                matricula: 80427,
+                carrera: "Ing. en Sistemas",
+                materias: ["Base de datos", "Métodos numéricos", "Taller de desarrollo web"],
+                amigos: [
+                    {
+                    nombre: "Andres A.",
+                    matricula: 80428,
+                    carrera: "Ing. en Sistemas",
+                    materias: ["BeamNg", "Rainbow six", "Cyberpunk 2077"]
+                },
+                {
+                    nombre: "Andres A.",
+                    matricula: 80428,
+                    carrera: "Ing. en Sistemas",
+                    materias: ["BeamNg", "Rainbow six", "Cyberpunk 2077"]
+                }
+            ]
+        }
+        console.log(estudiantes.nombre);
+        console.log(estudiantes.materias[2]);
+        console.log(estudiantes.amigos.materias[0]);
+
+        let a=10;
+        let b=20;
+
+        let sumar = a+b;
+        let restar = a-b;
+        let multiplicar = a*b;
+        let dividir = a/b;
+        
+        let residuo = 48%7;
+        console.log(residuo);
+
+        let mayor = a>b;
+        let menor = a<b;
+        let mayorIgual = a>=b;
+        let menorIgual = a<=b;
+        let igual = a==b;
+        
+        if(a!=b){
+            console.log("a es diferente de b");
+        }
+        else{
+            console.log("a es igual a b");
+        }
+
+        //Operador ternario
+        let comparacion = a!=b ? "a es diferente de b" : "a es igual a b";
+        console.log(comparacion);
+    </script>
+</body>
+</html>
