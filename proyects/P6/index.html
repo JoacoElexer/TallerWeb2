@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 6</title>
+</head>
+<body>
+    <h1>Arreglos</h1>
+    <p id="lista1">lista 1</p>
+    <script>
+        const fruits = ['apple', 'banana', 'orange', 'mango'];
+        let size = fruits.length;
+        console.log(size);
+
+        for (let i = 0; i < size; i++) {
+            console.log(fruits[i]);
+        }
+
+        let lista1 = document.getElementById('lista1');
+        lista1.innerHTML = fruits.toString();
+        console.log("La fruta es:", fruits);
+        console.warn("La fruta es:", fruits);
+        console.error("La fruta es:", fruits);
+    </script>
+</body>
+</html>
