@@ -28,62 +28,68 @@
         </div>
         <div class="row">
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '7'">7</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(7)">7</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '8'">8</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(8)">8</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '9'">9</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(9)">9</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '+'">+</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '4'">4</button>
-            </div>
-            <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '5'">5</button>
-            </div>
-            <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '6'">6</button>
-            </div>
-            <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '-'">-</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar('+')">+</button>
             </div>
         </div>
         <div class="row">
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '1'">1</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(4)">4</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '2'">2</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(5)">5</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '3'">3</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(6)">6</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += 'x'">x</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar('-')">-</button>
             </div>
         </div>
         <div class="row">
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '0'">0</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(1)">1</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="document.getElementById('resultado').value += '.'">.</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(2)">2</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-secondary form-control rounded-pill" onclick="document.getElementById('resultado').value += 'c'">c</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(3)">3</button>
             </div>
             <div class="col-3 text-cennter py-3">
-                <button type="button" class="btn btn-warning form-control rounded-pill" onclick="document.getElementById('resultado').value += '='">=</button>
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar('*')">x</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 text-cennter py-3">
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar(0)">0</button>
+            </div>
+            <div class="col-3 text-cennter py-3">
+                <button type="button" class="btn btn-primary form-control rounded-pill" onclick="asignar('.')">.</button>
+            </div>
+            <div class="col-3 text-cennter py-3">
+                <button type="button" class="btn btn-secondary form-control rounded-pill" onclick="limpiar()">c</button>
+            </div>
+            <div class="col-3 text-cennter py-3">
+                <button type="button" class="btn btn-warning form-control rounded-pill" onclick="asignar('/')">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-center py-3 offset-6">
+                <button type="button" class="btn btn-warning form-control rounded-pill" onclick="calcular()">=</button>
             </div>
         </div>
     </div>
 </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
