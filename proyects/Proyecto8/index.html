@@ -18,10 +18,10 @@
             </div>
             <div class="col-12 col-md-4">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar nueva tarea</button>
-            </div>
+                  </div>
         </div>
     </div>
-
+    <form name="formulario" id="formulario" action="index.html" method="post">
     <div class="modal fade" id="exampleModal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -33,24 +33,25 @@
               <div class="row">
                 <div class="col-12">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" class="form-control" required placeholder="Ingresa un nombre">
+                    <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Ingresa un nombre">
                 </div>
                 <div class="col-12">
                     <label for="fecha">Fecha: </label>
-                    <input type="datetime-local" name="descripcion" class="form-control" required>
+                    <input type="datetime-local" name="descripcion" id="fecha" class="form-control" required>
               </div>
                 <div class="col-12">
                     <label for="descripcion">Descripción: </label>
-                    <textarea name="descripcion" cols="30" rows="10" required class="form-control" placeholder="Ingresa una descripción"></textarea>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" required class="form-control" placeholder="Ingresa una descripción"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>
             </div>
           </div>
         </div>
       </div>
+    </form>
 <script src="JS/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
