@@ -17,12 +17,15 @@
                 <h1>App Lista de tareas</h1>
             </div>
             <div class="col-12 col-md-4">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar nueva tarea</button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevaTarea">Agregar nueva tarea</button>
                   </div>
         </div>
     </div>
+
+    <div id="listaTareas"></div>
+
     <form name="formulario" id="formulario" action="index.html" method="post">
-    <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal fade" id="nuevaTarea" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -37,7 +40,7 @@
                 </div>
                 <div class="col-12">
                     <label for="fecha">Fecha: </label>
-                    <input type="datetime-local" name="descripcion" id="fecha" class="form-control" required>
+                    <input type="date" name="descripcion" id="fecha" class="form-control" required>
               </div>
                 <div class="col-12">
                     <label for="descripcion">Descripción: </label>
