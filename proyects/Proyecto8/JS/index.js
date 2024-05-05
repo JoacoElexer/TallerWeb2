@@ -8,8 +8,28 @@ let listaTareas = document.getElementById('listaTareas');
 let btnGuardar = document.getElementById('btnGuardar');
 
 function mostrarTareas(){
-    listaTareas.innerHTML = 'Lista de tareas: ';
-    tareas.forEach((tarea,indice)=>{listaTareas.innerHTML += `<p>${tarea.nombre}<p>`});
+    listaTareas.innerHTML = '';
+    tareas.forEach((tarea,indice)=>{
+    listaTareas.innerHTML += `
+    <div class='row'>
+            <div class='col-3 border p-3'>
+                <strong>${tarea.nombre}</strong>
+            </div>
+            <div class='col-3 border p-3'>
+                <strong>${tarea.fecha}</strong>
+            </div>
+            <div class='col-3 border p-3'>
+                <strong>${tarea.descripcion}</strong>
+            </div>
+            <div class='col-1 border p-3 text-center'>
+                <button class='btn btn-success'>Editar</button>
+            </div>
+            <div class='col-1 border p-3 text-center'>
+            <button class='btn btn-danger'>Borrar</button>
+        </div>
+    </div>
+    `
+});
 }
 
 let agregarDatos = ()=>{
@@ -24,7 +44,13 @@ let agregarDatos = ()=>{
     mostrarTareas();
 }
 
+let cerrarModal = ()=>{
+    btnGuardar.setAttribute('data-bs-dismiss', 'modal');
+    btnGuardar.click();
+}
+
 formulario.addEventListener('submit', function(e){
     e.preventDefault();
     agregarDatos();
+    cerrarModal();
 });
