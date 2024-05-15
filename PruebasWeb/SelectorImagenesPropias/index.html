@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insertar Imagen</title>
+    <title>Subir y Mostrar Imagen, Video o Audio</title>
 </head>
 <body>
-    <h1>Subir y Mostrar Imagen</h1>
+    <h1>Subir y Mostrar Imagen, Video o Audio</h1>
     <input type="file" id="fileInput" accept="image/*,video/*,audio/*">
     <br><br>
+    <input type="text" id="urlInput" placeholder="Ingresa la URL del archivo">
+    <button onclick="loadFromUrl()">Cargar desde URL</button>
+    <br><br>
     <img id="imageDisplay" src="" alt="Imagen seleccionada" style="max-width: 500px; max-height: 500px; display: none;">
+    <video id="videoDisplay" controls style="max-width: 500px; max-height: 500px; display: none;"></video>
+    <audio id="audioDisplay" controls style="display: none;"></audio>
+    <div id="youtubeDisplay" style="display: none;">
+        <iframe id="youtubeIframe" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     
     <script src="js/index.js"></script>
 </body>
