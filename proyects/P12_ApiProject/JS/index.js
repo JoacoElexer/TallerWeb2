@@ -1,8 +1,3 @@
-//Public key: 8e88e79e258b144a93a7ea6fc4f62117
-//Private key: 8a2444aa0e8d1dbdc14104b4290a2d735038e4ad
-//Hash key: 18a2444aa0e8d1dbdc14104b4290a2d735038e4ad8e88e79e258b144a93a7ea6fc4f62117
-//md5 hash: 7bd129c86c7456f3f5062e004e993294
-
 const marvel={
     render:()=>{
         const urlApi='https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=8e88e79e258b144a93a7ea6fc4f62117&hash=7bd129c86c7456f3f5062e004e993294';
