@@ -5,13 +5,13 @@ dotenv.config(); // esto protege las contraseñas y datos sensibles
 
 const{connection} = require('../config.db'); //importa la conexión a la base de datos
 const getProductos = (request, response) => { //función que obtiene los productos
-    connection.query('SELECT * FROM tb_productos');
+    connection.query('SELECT * FROM tb_productos',
     (error, results) => {
         if(error){
             throw error;
         }
         response.status(200).json(results);
-    }
+    });
 }
 
 app.route('/productos').get(getProductos); //ruta que obtiene los productos
